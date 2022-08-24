@@ -11286,3 +11286,17 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.midea {
+    width: 50%;
+    float: left;
+    padding: 25px;
+   
+  }
+  
+.contents {
+    width: 50%;
+    float: left;
+    padding: 25px;
+    
+  }
+

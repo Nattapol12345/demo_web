@@ -53,11 +53,18 @@
         </div>
     </div>
         <!-- Call to Action-->
-        <div class="card text-white bg-secondary my-5 py-4 text-center">
-            <div class="card-body col-lg-7">
+        <div class="card text-white bg-secondary my-5 py-4 ">
+            <div class="row gx-4 gx-lg-5 align-items-center">
+                    <div class="card-body col-lg-7 text-center midea">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/quztsT8nnpY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+            <div class="col-lg-5 contents">
+            <h1 class="font-weight-light">Business Name or Tagline</h1>
+            <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
+            <a class="btn btn-primary" href="https://sw.com2us.com/en/skyarena/game">Call to Action!</a>
         </div>
+        </div>
+    </div>
         <!-- Content Row-->
         <div class="row gx-4 gx-lg-5">
             <div class="col-md-4 mb-5">

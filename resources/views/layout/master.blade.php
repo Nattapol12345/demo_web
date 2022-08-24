@@ -13,9 +13,19 @@
         {{-- <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" type="text/css" >
         <script src="{{ asset("assets/js/scripts.js") }}"></script> --}}
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> 
+        <style>
+             body {
+                background-image: url("https://pbs.twimg.com/media/EIyrZNcUwAA2Q89.jpg:large");
+                background-repeat: no-repeat;
+                height: 100%;
+                background-position: center;
+                background-size: cover;         
+                }
+        </style>
     </head>
     <body>
+
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container px-5">
