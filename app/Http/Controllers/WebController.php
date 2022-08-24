@@ -18,5 +18,11 @@ class WebController extends Controller
         
         return view('home',compact('posts'));
     }
+    public function detail()
+    {
+        
+        return view('/detail');
+    }
+    
     
 }

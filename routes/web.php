@@ -18,6 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
-Route::get('/demo', [WebController::class, 'index']);
+Route::get('detail', [WebController::class, 'detail'])->name('/detail');
+Route::get('/', [WebController::class, 'index']);
 Route::get('/home', [WebController::class, 'home']);
