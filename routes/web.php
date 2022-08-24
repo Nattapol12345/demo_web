@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\DEMO;
+use App\Http\Controllers\WebController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,5 +19,5 @@ Route::get('/', function () {
 });
 
 
-Route::get('/demo', [DEMO::class, 'index']);
-Route::get('/home', [DEMO::class, 'home']);
+Route::get('/demo', [WebController::class, 'index']);
+Route::get('/home', [WebController::class, 'home']);
