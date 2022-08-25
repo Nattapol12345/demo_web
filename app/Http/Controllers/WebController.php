@@ -18,10 +18,12 @@ class WebController extends Controller
         
         return view('home',compact('posts'));
     }
-    public function detail()
+    public function detail($id)
     {
-        
-        return view('/detail');
+        $data["post"] = Post::find($id);
+        // $data["posts"] = Post::all();
+
+        return view('/detail', $data);
     }
     
     

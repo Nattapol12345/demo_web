@@ -15,12 +15,19 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> 
         <style>
-             body {
+            body {
                 background-image: url("https://pbs.twimg.com/media/EIyrZNcUwAA2Q89.jpg:large");
                 background-repeat: no-repeat;
                 height: 100%;
                 background-position: center;
                 background-size: cover;         
+                }
+            footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                text-align: center;
                 }
         </style>
     </head>
@@ -43,8 +50,8 @@
         </nav>
         @yield('demo')
         <!-- Footer-->
-    <footer class="py-5 bg-dark">
-        <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>   
+    <footer class="py-3 bg-dark ">
+        <div class="container px-4 px-md-5 footer"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>   
         </footer>
         <!-- Bootstrap core JS-->
         {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

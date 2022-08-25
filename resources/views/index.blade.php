@@ -75,7 +75,7 @@
                         <h2 class="card-title">{{$post->title}}</h2>
                         <p class="card-text">{{$post->detail}}</p>
                     </div>
-                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="{{ route('/detail') }}">More Info</a></div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="{{ route('detail',$post->id) }}">More Info</a></div>
                 </div>
             </div>
             
