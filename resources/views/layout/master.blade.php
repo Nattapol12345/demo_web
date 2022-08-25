@@ -13,10 +13,11 @@
         {{-- <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" type="text/css" >
         <script src="{{ asset("assets/js/scripts.js") }}"></script> --}}
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> 
         <style>
             body {
-                background-image: url("https://pbs.twimg.com/media/EIyrZNcUwAA2Q89.jpg:large");
+                background-color: rgb(46, 43, 42);
                 background-repeat: no-repeat;
                 height: 100%;
                 background-position: center;
@@ -28,6 +29,31 @@
                 bottom: 0;
                 width: 100%;
                 text-align: center;
+                }
+
+                .vertical-menu {
+                width: 200px;
+                }
+
+                .vertical-menu a {
+                background-color: #eee;
+                color: black;
+                display: block;
+                padding: 12px;
+                text-decoration: none;
+                }
+
+                .vertical-menu a:hover {
+                background-color: #ccc;
+                }
+
+                .vertical-menu a.active {
+                background-color: #04AA6D;
+                color: white;
+                }
+                .card-body1 {
+                padding-left: -25%;
+                margin-top: 100%;
                 }
         </style>
     </head>
@@ -41,7 +67,15 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                        <li class="dropdown">
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Content</a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Arena</a></li>
+                              <li><a class="dropdown-item" href="#">PVE</a></li>
+                              <li><a class="dropdown-item" href="#">100 floor</a></li>
+                            </ul>
+                          </li></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Services</a></li>
                     </ul>
