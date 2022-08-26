@@ -55,18 +55,20 @@
                 .card-body1 {
                 padding-left: -25%;
                 margin-top: 100%;
+                
                 }
                 {
-  font-family: "Lato", sans-serif;
+font-family: Arial, Helvetica, sans-serif;
 }
 
 .sidenav {
-  width: 130px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 200px;
   position: absolute;
   z-index: 1;
-  top: 152px;
-  left: 185px;
-  background: #eee;
+  top: 216px;
+  left: 80px;
+  background:#6c757d;
   overflow-x: hidden;
   padding: 8px 0;
 }
@@ -75,12 +77,12 @@
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #2196F3;
+  color: #fff;
   display: block;
 }
 
 .sidenav a:hover {
-  color: #064579;
+  color: #000000;
 }
 
 .main {
@@ -141,11 +143,11 @@ body {
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container px-5">
-                <a class="navbar-brand" href="#!">Start Bootstrap</a>
+                <a class="navbar-brand" href="#!">Dev Webgame</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="{{ url('/') }}">Home</a></li>
                         <li class="dropdown">
                             <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Content</a>
@@ -164,7 +166,7 @@ body {
         @yield('demo')
         <!-- Footer-->
     <footer class="py-3 bg-dark ">
-        <div class="container px-4 px-md-5 footer"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>   
+        <div class="container px-4 px-md-5 footer"><p class="m-0 text-center text-white">Copyright &copy; Dev Webgame 2022</p></div>   
         </footer>
         <!-- Bootstrap core JS-->
         {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
