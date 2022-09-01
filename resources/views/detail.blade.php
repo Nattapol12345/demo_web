@@ -8,15 +8,10 @@
  
 
    <div class="card-body container gx-4 gx-lg-5 align-items-center my-5">
-      <div class="sidenav">
-         <a href="#about">About</a>
-         <a href="#services">Services</a>
-         <a href="#clients">Clients</a>
-         <a href="#contact">Contact</a>
-       </div>
+      
       <!-- Heading Row-->    
       <div class="row gx-4 gx-lg-5 align-items-center my-5">
-         <div class="card text-white bg-secondary my-5 py-4 ">
+         <div class="card text-white bg-dark my-5 py-4 ">
             <div class="row gx-4 gx-lg-5">
                <div>
                   <h2 class="font-weight-light">{{$post->title}}</h2>
@@ -31,7 +26,7 @@
           <!-- Call to Action-->
           <div class="ms-auto">
             <a class="icon" href="{{ url('/') }}">
-               <i class="fas fa-arrow-alt-circle-left fa-3x"></i>
+               <i class="fas fa-arrow-alt-circle-left fa-3x" style="color: rgb(255, 255, 255)"></i>
             </a>
         </div>
           <!-- Content Row-->

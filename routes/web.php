@@ -18,6 +18,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/list', [WebController::class, 'list']);
+Route::get('/tier', [WebController::class, 'tier']);
+Route::get('preview/{id}', [WebController::class, 'preview']);
 Route::get('detail/{id}', [WebController::class, 'detail'])->name('detail');
 Route::get('/', [WebController::class, 'index']);
 Route::get('/home', [WebController::class, 'home']);

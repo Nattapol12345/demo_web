@@ -2,10 +2,10 @@
 @section('demo')
 
 <!-- Page Content-->
-<div class="container px-4 px-lg-5">
+<div class=" container px-5 px-lg-5">
     <!-- Heading Row-->
-    <div class="row gx-4 gx-lg-5 align-items-center my-5">
-        <div class="col-lg-15 center">
+    <div class=" row gx-4 gx-lg-5 align-items-center my-5">
+        <div class="card-lg-15 center">
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -47,27 +47,33 @@
             </div>
     </div>
         <!-- Call to Action-->
-        <div class="card text-white bg-secondary my-5 py-4 ">
-            <div class="row gx-4 gx-lg-5 align-items-center">
-                    <div class="card-body col-lg-7 text-center midea">
+        <div class="card container-justify-content text-white bg-dark my-5 py-3 mideas">
+            <div class="row space-between ">
+                    <div class="card-body col-lg-7 text-center midea ">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/quztsT8nnpY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="col-lg-5 contents">
+            <div class="card-hiden col-lg-5 contents ">
             <h1 class="font-weight-light">New Monster</h1>
             <p>Summoners War New Monster [Battle Angel] Reveal</p>
             <a class="btn btn-primary" href="https://sw.com2us.com/en/skyarena/game">Call to Action!</a>
         </div>
         </div>
     </div>
+    <br>
+    <br>
+    <br>
+    
         <!-- Content Row-->
-        <div class="row gx-4 gx-lg-5">
+        <div class="row gx-4 gx-lg-5 news">
         @foreach($posts as $post)  
        
-            <div class="col-md-4 mb-5">
-                <div class="card h-100">
+            <div class="col-md-4 mb-5 ">
+                <div class="card h-100 bg-dark text-white">
                     <div class="card-body">
-                        <h2 class="card-title">{{$post->title}}</h2>
+                        <div class="a">
+                        <h4 class="card-title">{{$post->title}}</h4>
                         <p class="card-text">{{$post->detail}}</p>
+                    </div>
                     </div>
                     <div class="card-footer"><a class="btn btn-primary btn-sm" href="{{ route('detail',$post->id) }}">More Info</a></div>
                 </div>
@@ -75,7 +81,7 @@
             
            
             @endforeach       
-        
+         
 
 @endsection
 

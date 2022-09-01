@@ -8,7 +8,7 @@
         <meta name="author" content="" />
         <title>Small Business - Start Bootstrap Template</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="video" href="/resources/assets" />
         <link rel="stylesheet" href="css/styles.css">
         <!-- Core theme CSS (includes Bootstrap)-->
         {{-- <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" type="text/css" >
@@ -17,8 +17,13 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> 
         <style>
+          body, html {
+                      height: 100%;
+                      width:100%;
+                      margin: 0;
+                    }
             body {
-                background-color: rgb(27, 9, 4);
+                background-image: url("https://img.wallpapersafari.com/tablet/1536/2048/74/42/7Zlta1.jpg");
                 background-repeat: no-repeat;
                 height: 100%;
                 background-position: center;
@@ -61,40 +66,6 @@
 font-family: Arial, Helvetica, sans-serif;
 }
 
-.sidenav {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 200px;
-  position: absolute;
-  z-index: 1;
-  top: 216px;
-  left: 80px;
-  background:#6c757d;
-  overflow-x: hidden;
-  padding: 8px 0;
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #fff;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #000000;
-}
-
-.main {
-  margin-left: 140px; /* Same width as the sidebar + left position in px */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
 * {
   box-sizing: border-box;
 }
@@ -136,10 +107,66 @@ body {
   text-align: center;
   background-color: #f1f1f1;
 }
-        </style>
+div.a {
+  white-space: nowrap; 
+  width: 290px; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 80px 200px;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.text-pre{
+color: rgb(0, 0, 0);
+}
+.info {
+  float: left;
+  width: 70%;
+  position: absolute;
+  z-index: 1;
+  top: 102px;
+  left: 480px;
+  padding: 0 10px;
+  
+}
+.img-rune {
+  width: 125%;
+  padding-left:  30%;
+  padding-top:  5%;
+}.btn-back {
+  padding-left:  95%;
+}
+.btn-back1 {
+  padding-top:  3%;
+  padding-left:  92%;
+  padding-bottom: 3%;
+}
+.news {
+  padding-bottom: 70px;
+}
+.mideas {
+  padding-bottom: 70px;
+  width: auto;
+}
+
+
+  </style>
     </head>
     <body>
-
+     
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container px-5">
@@ -152,9 +179,9 @@ body {
                             <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Content</a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                              <li><a class="dropdown-item" href="#">Monster</a></li>
-                              <li><a class="dropdown-item" href="#">PVE</a></li>
-                              <li><a class="dropdown-item" href="#">100 floor</a></li>
+                              <li><a class="dropdown-item" href="{{url('list')}}">Monster</a></li>
+                              <li><a class="dropdown-item" href="{{url('tier')}}">Tier list</a></li>
+                              <li><a class="dropdown-item" href="http://rtfc.games/%E0%B8%95%E0%B8%B0%E0%B8%A5%E0%B8%B8%E0%B8%A2%E0%B8%AB%E0%B8%AD%E0%B8%84%E0%B8%AD%E0%B8%A2%E0%B8%AA%E0%B8%B9%E0%B9%88%E0%B8%AA%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%84%E0%B9%8C-tower-ascension-%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%96%E0%B8%AD%E0%B8%B0/">100 floor</a></li>
                             </ul>
                           </li></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
