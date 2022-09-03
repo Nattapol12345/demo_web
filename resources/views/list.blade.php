@@ -11,7 +11,8 @@
                     <div class="card" style="width: 18rem;">
                         <strong>{{$infor->name_th}}</strong>
                         <a>{{$infor->name_en}}</a>
-                        <img href="{{$infor->photo}}" class="card-img-top" alt="">
+                        <img src="{{( asset('/uploads/Monster/'.$infor->photo) )}}" class="card-img-top" alt="Image"> 
+                        
                         <a class="priview" href="{{ url('preview',$infor->id) }}">
                             <i class="fas fa-search fa-2x" style="color: rgb(0, 0, 0)"></i>
                         </a> 

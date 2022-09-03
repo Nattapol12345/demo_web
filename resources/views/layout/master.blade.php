@@ -177,14 +177,33 @@ color: rgb(0, 0, 0);
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="{{ url('/') }}">Home</a></li>
                         <li class="dropdown">
                             <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Combo</a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                              <li><a class="dropdown-item" href="{{url('combo')}}">Combo</a></li>
+                              <li><a class="dropdown-item" href="{{url('#')}}">อารีน่า</a></li>
+                              <li><a class="dropdown-item" href="{{url('#')}}">มังกร</a></li>
+                              <li><a class="dropdown-item" href="{{url('#')}}">ยักษ์</a></li>
+                              <li><a class="dropdown-item" href="{{url('#')}}">เนโคร</a></li>
+                              <li><a class="dropdown-item" href="{{url('#')}}">ปราการเหล็ก</a></li>
+                              <li><a class="dropdown-item" href="{{url('#')}}">โถงพิพากษา</a></li>
+                              <li><a class="dropdown-item" href="{{url('#')}}">โถงเวทย์มนตร์</a></li>
+                              <li><a class="dropdown-item" href="{{url('#')}}">โถงแสง</a></li>
+                              <li><a class="dropdown-item" href="{{url('#')}}">โถงมืด</a></li>
+                              <li><a class="dropdown-item" href="{{url('#')}}">โถงไฟ</a></li>
+                              <li><a class="dropdown-item" href="{{url('#')}}">โถงน้ำ</a></li>
+                              <li><a class="dropdown-item" href="{{url('#')}}">โถงลม</a></li>
+                              <li><a class="dropdown-item" href="{{url('#')}}">RTA</a></li>
+                              <li><a class="dropdown-item" href="{{url('#')}}">ทาทารัส</a></li>
+                              <li><a class="dropdown-item" href="{{url('#')}}">กิล 1 ทาง</a></li>
+                              <li><a class="dropdown-item" href="{{url('#')}}">กิลบุก 3 ทาง</a></li>
+                              <li><a class="dropdown-item" href="{{url('#')}}">กิลรับ 3 ทาง</a></li>
+                            </ul>
+                          </li></li>
+                          <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Content</a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                               <li><a class="dropdown-item" href="{{url('list')}}">Monster</a></li>
                               <li><a class="dropdown-item" href="{{url('tier')}}">Tier list</a></li>
-                              <li><a class="dropdown-item" href="http://rtfc.games/%E0%B8%95%E0%B8%B0%E0%B8%A5%E0%B8%B8%E0%B8%A2%E0%B8%AB%E0%B8%AD%E0%B8%84%E0%B8%AD%E0%B8%A2%E0%B8%AA%E0%B8%B9%E0%B9%88%E0%B8%AA%E0%B8%A7%E0%B8%A3%E0%B8%A3%E0%B8%84%E0%B9%8C-tower-ascension-%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%96%E0%B8%AD%E0%B8%B0/">100 floor</a></li>
-                            </ul>
-                          </li></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Services</a></li>
                     </ul>
                 </div>

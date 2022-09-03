@@ -17,7 +17,7 @@ use App\Http\Controllers\WebController;
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('combo/{id}', [WebController::class, 'combo'])->name('combo');
 Route::get('/list', [WebController::class, 'list']);
 Route::get('/tier', [WebController::class, 'tier']);
 Route::get('preview/{id}', [WebController::class, 'preview']);
