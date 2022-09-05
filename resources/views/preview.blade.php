@@ -5,54 +5,6 @@
     <div class=" gx-4 gx-lg-5 my-5">
         <div class="card-container text-white bg-dark px-5 py-5 g-1">
             
-            <div class="container">
-                <div class="row row-cols-2 row-cols-lg-2">
-           <div class="col-sm-4">
-                    <a class="nav-link dropdown-toggle btn btn-secondary text-white " href="#" role="button" data-bs-toggle="dropdown">Combo</a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                      <li><a class="dropdown-item" href="{{url('combo')}}">Combo Monster</a></li>
-                      <li><a class="dropdown-item" href="{{url('#')}}">อารีน่า</a></li>
-                      <li><a class="dropdown-item" href="{{url('#')}}">มังกร</a></li>
-                      <li><a class="dropdown-item" href="{{url('#')}}">ยักษ์</a></li>
-                      <li><a class="dropdown-item" href="{{url('#')}}">เนโคร</a></li>
-                      <li><a class="dropdown-item" href="{{url('#')}}">ปราการเหล็ก</a></li>
-                      <li><a class="dropdown-item" href="{{url('#')}}">โถงพิพากษา</a></li>
-                      <li><a class="dropdown-item" href="{{url('#')}}">โถงเวทย์มนตร์</a></li>
-                      <li><a class="dropdown-item" href="{{url('#')}}">โถงแสง</a></li>
-                      <li><a class="dropdown-item" href="{{url('#')}}">โถงมืด</a></li>
-                      <li><a class="dropdown-item" href="{{url('#')}}">โถงไฟ</a></li>
-                      <li><a class="dropdown-item" href="{{url('#')}}">โถงน้ำ</a></li>
-                      <li><a class="dropdown-item" href="{{url('#')}}">โถงลม</a></li>
-                      <li><a class="dropdown-item" href="{{url('#')}}">RTA</a></li>
-                      <li><a class="dropdown-item" href="{{url('#')}}">ทาทารัส</a></li>
-                      <li><a class="dropdown-item" href="{{url('#')}}">กิล 1 ทาง</a></li>
-                      <li><a class="dropdown-item" href="{{url('/combo',$datas->id)}}">กิลบุก 3 ทาง</a></li>
-                      <li><a class="dropdown-item" href="{{url('#')}}">กิลรับ 3 ทาง</a></li>
-                    </ul>
-                  </li>
-                </li>
-            </div>
-
-            <div class="col-sm-4">
-                <a class="nav-link dropdown-toggle btn btn-secondary text-white " href="#" role="button" data-bs-toggle="dropdown">Steamer</a>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                  <li><a class="dropdown-item" href="{{url('combo')}}">Combo</a></li>
-                  <li><a class="dropdown-item" href="{{url('#')}}">WAN KUNG</a></li>
-                  <li><a class="dropdown-item" href="{{url('#')}}">Zera</a></li>
-                  <li><a class="dropdown-item" href="{{url('#')}}">BankYim</a></li>
-                  <li><a class="dropdown-item" href="{{url('#')}}">Blue Chanel</a></li>
-                  <li><a class="dropdown-item" href="{{url('#')}}">A3GTH (One More Time)</a></li>
-                  <li><a class="dropdown-item" href="{{url('#')}}">ADY AKEZ</a></li>
-                  <li><a class="dropdown-item" href="{{url('#')}}">TRUE LOVE</a></li>
-                  <li><a class="dropdown-item" href="{{url('#')}}">Clod</a></li>
-                </ul>
-              </li>
-            </li>
-            </div>
-
-        </div>
-    </div>
-    <br>
     
             <div class="row text-center">
                 <h2>{{$datas->name_en}}</h2>

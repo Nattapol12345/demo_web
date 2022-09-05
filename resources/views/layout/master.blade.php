@@ -178,25 +178,9 @@ color: rgb(0, 0, 0);
                         <li class="dropdown">
                             <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Combo</a>
-                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                              <li><a class="dropdown-item" href="{{url('combo')}}">Combo</a></li>
-                              <li><a class="dropdown-item" href="{{url('#')}}">อารีน่า</a></li>
-                              <li><a class="dropdown-item" href="{{url('#')}}">มังกร</a></li>
-                              <li><a class="dropdown-item" href="{{url('#')}}">ยักษ์</a></li>
-                              <li><a class="dropdown-item" href="{{url('#')}}">เนโคร</a></li>
-                              <li><a class="dropdown-item" href="{{url('#')}}">ปราการเหล็ก</a></li>
-                              <li><a class="dropdown-item" href="{{url('#')}}">โถงพิพากษา</a></li>
-                              <li><a class="dropdown-item" href="{{url('#')}}">โถงเวทย์มนตร์</a></li>
-                              <li><a class="dropdown-item" href="{{url('#')}}">โถงแสง</a></li>
-                              <li><a class="dropdown-item" href="{{url('#')}}">โถงมืด</a></li>
-                              <li><a class="dropdown-item" href="{{url('#')}}">โถงไฟ</a></li>
-                              <li><a class="dropdown-item" href="{{url('#')}}">โถงน้ำ</a></li>
-                              <li><a class="dropdown-item" href="{{url('#')}}">โถงลม</a></li>
-                              <li><a class="dropdown-item" href="{{url('#')}}">RTA</a></li>
-                              <li><a class="dropdown-item" href="{{url('#')}}">ทาทารัส</a></li>
-                              <li><a class="dropdown-item" href="{{url('#')}}">กิล 1 ทาง</a></li>
-                              <li><a class="dropdown-item" href="{{url('#')}}">กิลบุก 3 ทาง</a></li>
-                              <li><a class="dropdown-item" href="{{url('#')}}">กิลรับ 3 ทาง</a></li>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink" >
+                              <li><a class="dropdown-item" href="{{url('combo')}}">Combos</a></li>                            
+                              <li><a class="dropdown-item" href=""></a></li> 
                             </ul>
                           </li></li>
                           <li class="nav-item dropdown">

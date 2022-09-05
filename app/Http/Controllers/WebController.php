@@ -10,6 +10,7 @@ use App\Models\Tb_combo_monster;
 use App\Models\Tb_content;
 use App\Models\combo;
 use App\Models\Tb_combo;
+use App\Models\Tb_combos;
 
 class WebController extends Controller
 {
@@ -49,18 +50,12 @@ class WebController extends Controller
         return view('/list',compact('info'));
     }
 
-    public function combo($id)
-    {   
-        
-        $datas1 = Tb_monster::find($id);
-
-        $datas2 = Tb_combo::join('tb_contents','tb_combos.content_id','=','tb_contents.id')
-        ->select('tb_contents.name','tb_combos.content_id')
-        ->get();
-         
-        $datas3 = Tb_combo::all();
-             
-        
-        return view('combo',compact('datas1','datas2','datas3'));
+    public function combo()
+    {
+        $namecombos = Tb_combos::all();
+        return view('/combo',compact('namecombos'));
     }
+    
 }
+
+
