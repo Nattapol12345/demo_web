@@ -52,8 +52,15 @@ class WebController extends Controller
 
     public function combo()
     {
-        $namecombos = Tb_combos::all();
-        return view('/combo',compact('namecombos'));
+        $com = Tb_content::all();
+       
+        return view('/combo',compact('com'));
+    }
+    public function combo_monsters()
+    {
+        $com = Tb_content::all();
+       
+        return view('/combo_monsters',compact('com'));
     }
     
 }
