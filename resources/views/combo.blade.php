@@ -10,7 +10,6 @@
                 <div class="row text-center">
                     <div class="card" style="width: 18rem;">
                         <strong>{{$namecombo->name}}</strong>
-                        <a>{{$namecombo->remark}}</a>
                         <a class="priview" href="{{route('combo_monsters',$namecombo->id)}}">
                             <i class="fas fa-search fa-2x" style="color: rgb(0, 0, 0)"></i>
                         </a> 

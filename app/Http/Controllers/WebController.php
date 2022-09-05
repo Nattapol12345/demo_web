@@ -11,6 +11,7 @@ use App\Models\Tb_content;
 use App\Models\combo;
 use App\Models\Tb_combo;
 use App\Models\Tb_combos;
+use App\Models\Tb_combo_monsters;
 
 class WebController extends Controller
 {
@@ -58,9 +59,9 @@ class WebController extends Controller
     }
     public function combo_monsters()
     {
-        $com = Tb_content::all();
-       
-        return view('/combo_monsters',compact('com'));
+        $comboname = Tb_combos::all();
+        $combophoto = Tb_combo_monsters::all();
+        return view('/combo_monsters',compact('comboname','combophoto'));
     }
     
 }
