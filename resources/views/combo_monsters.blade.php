@@ -18,8 +18,11 @@
                         <div class="card-body">
                         <img class="card-img-top" src="{{( asset('/uploads/Monster/'.$row_name->photo) )}}" alt="Card image" style="width:100%">
                     </div>
+                    <a class="priview" href="{{ url('preview',$row_name->id) }}">
+                        <i class="fas fa-search fa-2x" style="color: rgb(0, 0, 0)"></i>
+                    </a> 
                         
-
+                       
                     </div>
                 </div>
             </div>
@@ -27,7 +30,7 @@
       @endforeach
        
 
-            <a class="btn-back1" href="{{ url('/') }}">
+            <a class="btn-back1" href="{{ url('/combo') }}">
                 <i class="icon fas fa-arrow-alt-circle-left fa-3x" style="color: rgb(255, 255, 255)"></i>
             </a> 
     </div>
