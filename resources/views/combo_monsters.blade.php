@@ -4,22 +4,28 @@
 <div class="container gx-4 gx-lg-5">
     <div class="row text-dark bg-dark gx-4 gx-lg-5 my-5 row-cols-4">
         
-        @foreach ($comboname as $combocontent)
+        
+        @foreach($combos as $row_name)
         <div class="card-body px-5 py-5">
             <div class="row text">
                 <div class="row text-center">
                     <div class="card" style="width: 18rem;">
-                        <strong>{{$combocontent->name}}</strong>
-                        <a>{{$combocontent->remark}}</a>
+                        <strong>{{$row_name->name}}</strong>
+                        <a>{{$row_name->remark}}</a>
                         
-        @foreach ($combophoto as $photo)
-                        <img class="card-img-top" src="{{( asset('/uploads/Monster/') )}}" alt="Card image" style="width:100%"> @endforeach
-                       
+                        {{-- @foreach($mon_img as $row_img) --}}
+                        <header class="text-center"></header>
+                        <div class="card-body">
+                        <img class="card-img-top" src="" alt="Card image" style="width:100%">
+                        
+                    </div>
+                        {{-- @endforeach --}}
+
                     </div>
                 </div>
             </div>
         </div>
-        @endforeach
+      @endforeach
        
 
             <a class="btn-back1" href="{{ url('/') }}">

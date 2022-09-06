@@ -10,8 +10,8 @@ use App\Models\Tb_combo_monster;
 use App\Models\Tb_content;
 use App\Models\combo;
 use App\Models\Tb_combo;
-use App\Models\Tb_combos;
-use App\Models\Tb_combo_monsters;
+
+
 
 class WebController extends Controller
 {
@@ -30,13 +30,14 @@ class WebController extends Controller
     public function detail($id)
     {
         $data["post"] = Post::find($id);
+        
         return view('/detail',$data);
     }
 
     public function preview($id)
     {
         $datas = Tb_monster::find($id);
-      
+        
         return view('/preview',compact('datas'));
     }
 
@@ -53,15 +54,29 @@ class WebController extends Controller
 
     public function combo()
     {
-        $com = Tb_content::all();
+        $com = Tb_content::get();
        
         return view('/combo',compact('com'));
     }
-    public function combo_monsters()
+    public function combo_monsters($id)
     {
-        $comboname = Tb_combos::all();
-        $combophoto = Tb_combo_monsters::all();
-        return view('/combo_monsters',compact('comboname','combophoto'));
+        
+        
+        $combos =  Tb_content::find($id)
+        ->leftjoin('tb_combos','tb_contents.id','=','tb_combos.content_id')
+        ->select('tb_combos.name','tb_combos.remark') 
+        ->where('tb_contents.id',$id)
+        ->get();
+
+           
+       
+         
+
+
+
+      
+        
+        return view('/combo_monsters',compact('combos'));
     }
     
 }
