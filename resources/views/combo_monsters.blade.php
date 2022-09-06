@@ -13,13 +13,12 @@
                         <strong>{{$row_name->name}}</strong>
                         <a>{{$row_name->remark}}</a>
                         
-                        {{-- @foreach($mon_img as $row_img) --}}
+                        
                         <header class="text-center"></header>
                         <div class="card-body">
-                        <img class="card-img-top" src="" alt="Card image" style="width:100%">
-                        
+                        <img class="card-img-top" src="{{( asset('/uploads/Monster/'.$row_name->photo) )}}" alt="Card image" style="width:100%">
                     </div>
-                        {{-- @endforeach --}}
+                        
 
                     </div>
                 </div>
