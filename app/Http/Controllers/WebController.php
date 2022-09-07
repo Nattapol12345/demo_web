@@ -66,7 +66,7 @@ class WebController extends Controller
         ->leftjoin('tb_combos','tb_contents.id','=','tb_combos.content_id')
         ->leftjoin('tb_combo_monsters','tb_combos.id','=','tb_combo_monsters.combo_id')
         ->leftjoin('tb_monsters','tb_combo_monsters.monster_id','=','tb_monsters.id')
-        ->select('tb_combos.name','tb_combos.remark','tb_combos.id','tb_monsters.*') 
+        ->select('tb_combos.name as name_combo','tb_combos.remark','tb_combos.id','tb_monsters.*') 
         ->where('tb_contents.id',$id)
         ->get();
 

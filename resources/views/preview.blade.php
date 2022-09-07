@@ -19,9 +19,12 @@
                                                     <p>{{$datas->name_th}}</p>
                                 <p class="card-text ">
                                         OVERVIEW
-
+                                        <br>
                                         Grade ★★★★★
+                                        <br>
                                         Type Attack
+                                        <br>
+                                        <br>
                                         Badges Arena Defense, Arena Offense, Guild War Defense, Guild War Offense, Keeper
                                         Get From Mystical Scroll, Mystical Summon, Temple of Wishes, Fire Scroll, Legendary Scroll
                                         Awakened Increases Resistance by 25%
@@ -35,56 +38,78 @@
                     <div class=" container col-sm-8">
                         <div class="row" style="width:auto">
                             <div class="row row-cols-2">
-                                <div class="col" style="width:350px">
+
+                                <div class="col " style="width:350px" >
                                     <strong>Atack</strong>
-                                    <div class="sm mb-3">
-                                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="{{$datas->atk}}">
+                                    <div class="card-container lg mb-3 text-dark bg-white">
+                                            <div class="rounded-pill" width="200" height="200" style="border:1px solid">
+                                                <strong>{{$datas->atk}}</strong>
+                                            </div>
                                     </div>
                                 </div>
-                            <div class="col" style="width:350px">
-                                <strong>Critical</strong>
-                                <div class="input-group input-group-sm mb-3">
-                                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Cri Rate">
-                                  </div>
-                                </div> 
-                            <div class="col" style="width:350px">
-                                <strong>Defend</strong>
-                                <div class="input-group input-group-sm mb-3">
-                                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="{{$datas->def}}">
-                                  </div>
-                                </div> 
-                            <div class="col" style="width:350px">
-                                <strong>Critical Damage</strong>
-                                <div class="input-group input-group-sm mb-3">
-                                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Cri Dam">
-                                  </div>
-                                </div> 
-                            <div class="col" style="width:350px">
-                                <strong>Hp</strong>
-                                <div class="input-group input-group-sm mb-3">
-                                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="{{$datas->hp}}">
-                                  </div>
-                                </div> 
-                            <div class="col" style="width:350px">
-                                <strong>Resistance</strong>
-                                <div class="input-group input-group-sm mb-3">
-                                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Resistance">
-                                  </div>
-                                </div> 
-                            <div class="col" style="width:350px">
-                                <strong>Speed</strong>
-                                <div class="input-group input-group-sm mb-3">
-                                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="{{$datas->spd}}">
-                                  </div>
-                                </div>
-                            <div class="col" style="width:350px">
-                                <strong>Accuracy</strong>
-                                <div class="input-group input-group-sm mb-3">
-                                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Accuracy">
-                                   </div>
-                                </div>
                                 
-                                
+                                <div class="col" style="width:350px">
+                                    <strong>Critical</strong>
+                                    <div class="card-container lg mb-3 text-dark bg-white">
+                                            <div class="rounded-pill" width="200" height="200" style="border:1px solid">
+                                                <strong></strong>
+                                            </div>
+                                    </div>
+                                </div>
+
+                                <div class="col" style="width:350px">
+                                    <strong>Defend</strong>
+                                    <div class="card-container lg mb-3 text-dark bg-white">
+                                            <div class="rounded-pill" width="200" height="200" style="border:1px solid">
+                                                <strong>{{$datas->def}}</strong>
+                                            </div>
+                                    </div>
+                                </div>
+
+                                <div class="col" style="width:350px">
+                                    <strong>Critical Damage</strong>
+                                    <div class="card-container lg mb-3 text-dark bg-white">
+                                            <div class="rounded-pill" width="200" height="200" style="border:1px solid">
+                                                <strong></strong>
+                                            </div>
+                                    </div>
+                                </div>
+
+                                <div class="col" style="width:350px">
+                                    <strong>Hp</strong>
+                                   <div class="card-container lg mb-3 text-dark bg-white">
+                                            <div class="rounded-pill" width="200" height="200" style="border:1px solid">
+                                                <strong>{{$datas->hp}}</strong>
+                                            </div>
+                                    </div>
+                                </div>
+
+                                <div class="col" style="width:350px">
+                                    <strong>Resistance</strong>
+                                    <div class="card-container lg mb-3 text-dark bg-white">
+                                            <div class="rounded-pill" width="200" height="200" style="border:1px solid">
+                                                <strong></strong>
+                                            </div>
+                                    </div>
+                                </div>
+
+                                <div class="col" style="width:350px">
+                                    <strong>Speed</strong>
+                                    <div class="card-container lg mb-3 text-dark bg-white">
+                                            <div class="rounded-pill" width="200" height="200" style="border:1px solid">
+                                                <strong>{{$datas->spd}}</strong>
+                                            </div>
+                                    </div>
+                                </div>
+
+                                <div class="col" style="width:350px">
+                                    <strong>Accuracy</strong>
+                                    <div class="card-container lg mb-3 text-dark bg-white">
+                                            <div class="rounded-pill" width="200" height="200" style="border:1px solid">
+                                                <strong></strong>
+                                            </div>
+                                    </div>
+                                </div>
 
                             <div class=" container col-sm-12">    
                                 <div class="col col-6 col-lg-8">

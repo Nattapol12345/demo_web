@@ -1,9 +1,14 @@
 @extends('/layout/master')
 @section('demo')
-
 <div class="container gx-4 gx-lg-5">
-    <div class="row text-dark bg-dark gx-4 gx-lg-5 my-5 row-cols-4">
-        
+    <div class="row text-center text-white bg-dark gx-4 gx-lg-5 my-5 row-cols-1">
+        <div class="card-body px-5 py-5">
+        <strong>Content</strong>
+        </div>
+    </div>
+</div>
+<div class="container gx-4 gx-lg-5">
+        <div class="row text-dark bg-dark gx-4 gx-lg-5 my-5 row-cols-4">
         @foreach ($com as $namecombo)
         <div class="card-body px-5 py-5">
             <div class="row text">
@@ -30,4 +35,5 @@
 </div>
 <br>
 <br>
+
 @endsection
